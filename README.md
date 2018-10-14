@@ -18,3 +18,6 @@ This program takes two inputs (A and B) and offers the result of A^B using a typ
 	-in PROD we load what we have in address 97(the first input), if it's zero then we update the value of REZPU and jump to PUT
 		otherwise we load what is in address 96 and add to it REZPU, then store the result in 96 and subtract ONE(1) from 97 and repeat the process
 	-when we're DONE we jump to DONE and load the result(REZPU) in address memory 95 and output the result :) 
+
+
+![presentationgif](https://user-images.githubusercontent.com/30869379/46915632-94aa8200-cfb6-11e8-9030-57b70689dff3.gif)

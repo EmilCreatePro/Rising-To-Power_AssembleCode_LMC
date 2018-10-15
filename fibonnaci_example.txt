@@ -1,0 +1,29 @@
+        INP
+        STA N 
+        LDA PREC1
+        OUT
+        LDA PREC2 
+        OUT 
+        BRA FIB
+FIB     LDA COUNT
+        SUB N
+        BRZ EXIT
+        LDA PREC1
+        ADD PREC2
+        STA NEXT
+        OUT
+        LDA PREC2
+        STA PREC1
+        LDA NEXT
+        STA PREC2
+        LDA COUNT
+        ADD ONE
+        STA COUNT
+        BRA FIB
+EXIT    HLT
+N       DAT 
+PREC1   DAT 0
+PREC2   DAT 1
+NEXT    DAT
+COUNT   DAT 1
+ONE     DAT 1
